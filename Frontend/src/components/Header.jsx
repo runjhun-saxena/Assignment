@@ -60,7 +60,6 @@ const Header = () => {
         >
             <div className="container my-5 px-4 sm:px-6 lg:px-8 ">
                 <div className="flex items-center justify-between h-full ">
-                    {/* Logo with responsive sizing */}
                     <a href="#" className="flex items-center gap-2">
                         <img
                             src="https://zylentrix.net/wp-content/uploads/2025/02/Zylentrix-Logo-Without-Tagline-e1740601873157-2048x491.png"
@@ -69,7 +68,7 @@ const Header = () => {
                         />
                     </a>
 
-                    {/* Desktop Navigation */}
+                    {/* Desktop Navigation Strats here */}
                     <nav className="hidden md:block">
                         <ul className="flex space-x-6 lg:space-x-8">
                             {navItems.map((item) => (
@@ -77,22 +76,22 @@ const Header = () => {
                                     <a
                                         href={`#${item.id}`}
                                         className={`px-2 py-1 text-base lg:text-xl hover:bg-gray  font-medium transition-colors rounded-md ${activeSection === item.id
-                                                ? 'text-[#27216a]  bg-indigo-100 font-semibold'
-                                                : isScrolled
-                                                    ? 'text-gray-700 hover:text-indigo-900'
-                                                    : 'text-gray-800 hover:text-indigo-900'
+                                            ? 'text-[#27216a]  bg-indigo-100 font-semibold'
+                                            : isScrolled
+                                                ? 'text-gray-700 hover:text-indigo-900'
+                                                : 'text-gray-800 hover:text-indigo-900'
                                             }`}
                                     >
                                         {item.label}
                                     </a>
                                 </li>
                             ))}
-                          
+
                         </ul>
 
                     </nav>
 
-                    {/* Mobile Toggle Button with dynamic color */}
+                    {/* Mobile Toggle Button */}
                     <button
                         className="md:hidden z-50 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -106,10 +105,10 @@ const Header = () => {
                     </button>
                 </div>
 
-                {/* Mobile Menu with smooth animation */}
-                
+                {/* Mobile Menu */}
+
                 <div
-                
+
                     className={`md:hidden transition-all duration-300 ease-in-out overflow-hidden ${isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
                         }`}
                     style={{ transitionProperty: 'max-height, opacity' }}
@@ -120,8 +119,8 @@ const Header = () => {
                                 <a
                                     href={`#${item.id}`}
                                     className={`block px-4 py-3 text-sm transition-colors ${activeSection === item.id
-                                            ? 'text-[#27216a]  bg-indigo-100 font-medium'
-                                            : 'text-gray-700 hover:bg-gray-50'
+                                        ? 'text-[#27216a]  bg-indigo-100 font-medium'
+                                        : 'text-gray-700 hover:bg-gray-50'
                                         }`}
                                     onClick={() => setIsMenuOpen(false)}
                                 >
@@ -129,7 +128,7 @@ const Header = () => {
                                 </a>
                             </li>
                         ))}
-                        
+
                     </ul>
                 </div>
             </div>

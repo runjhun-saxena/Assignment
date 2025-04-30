@@ -12,8 +12,6 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
-
-    // Show toast
     toast.success('Message sent successfully!', {
       position: "top-center",
       autoClose: 3000,
@@ -23,8 +21,6 @@ const Contact = () => {
       draggable: true,
       progress: undefined,
     });
-
-    // Reset form
     setFormData({ name: '', email: '', message: '' });
   };
 
