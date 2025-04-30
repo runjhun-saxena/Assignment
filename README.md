@@ -21,7 +21,7 @@ added several modern NPM libraries for animations and user experience enhancemen
 
 1. **Clone the repository**
    -Choose the link from under the Code on the repository page copy that link
-   - Paste in your terminal with commant **" git clone (repository name )"**
+   - Paste in your terminal with commant **" git clone (copied link of repository )"**
    - go in the Frontend folder " cd Frontend "
    - npm i
    - npm run dev
