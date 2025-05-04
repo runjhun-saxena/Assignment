@@ -1,5 +1,7 @@
 # Zylentrix Assignment Landing Page
 
+https://github.com/user-attachments/assets/b80775d9-ce16-4287-bb1f-d9a21b65e6a7
+
 Developed a  responsive and interactive landing page for a consultancy website, built using **Javascript** **React.js**, **Tailwind CSS**
 added several modern NPM libraries for animations and user experience enhancements.
 ## Features
